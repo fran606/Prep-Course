@@ -149,13 +149,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.pow(num, exponent);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.pow(num, exponent);
+  return Math.ceil(num);
   
 }
 
@@ -185,15 +185,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  if(numero === 0) {
-    return false;
-  }
-  else if(numero > 0) {
-    return "Es positivo";
-  }
-  else {
-    return "Es negativo";
-  }
+  
+  return str + '!';
 }
 
 
